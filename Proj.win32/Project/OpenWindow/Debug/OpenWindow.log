@@ -1,0 +1,24 @@
+﻿生成启动时间为 2017/2/11 12:51:49。
+     1>项目“D:\PersonSpace\SoftRendering\Proj.win32\Project\OpenWindow\OpenWindow.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\WorkTool\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\WorkTool\VS2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\PersonSpace\SoftRendering\Proj.win32\Project\Debug\OpenWindow.exe" /INCREMENTAL /NOLOGO glfw3.lib opengl32.lib glew32.lib glew32sd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\PersonSpace\SoftRendering\Proj.win32\Project\Debug\OpenWindow.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\PersonSpace\SoftRendering\Proj.win32\Project\Debug\OpenWindow.lib" /MACHINE:X86 Debug\main.obj
+     1>main.obj : error LNK2019: 无法解析的外部符号 __imp__glewInit@0，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwInit，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwTerminate，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowShouldClose，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwSetInputMode，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwGetKey，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2019: 无法解析的外部符号 _glfwSwapBuffers，该符号在函数 _main 中被引用
+     1>main.obj : error LNK2001: 无法解析的外部符号 __imp__glewExperimental
+     1>D:\PersonSpace\SoftRendering\Proj.win32\Project\Debug\OpenWindow.exe : fatal error LNK1120: 11 个无法解析的外部命令
+     1>已完成生成项目“D:\PersonSpace\SoftRendering\Proj.win32\Project\OpenWindow\OpenWindow.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.06

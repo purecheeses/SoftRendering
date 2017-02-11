@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2BBA346D-358B-3C7A-B3A4-22FD77851DA2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+ <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+ <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+ <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+ <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+ <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt">
+     <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt</Message>
+     <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1 -BD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build --check-stamp-file D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+     <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindDoxygen.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakePackageConfigHelpers.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\WriteBasicConfigVersionFile.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3Config.cmake.in;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw_config.h.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3.pc.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\cmake_uninstall.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+     <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\generate.stamp</Outputs>
+     <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+     <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt</Message>
+     <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1 -BD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build --check-stamp-file D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+     <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindDoxygen.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakePackageConfigHelpers.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\WriteBasicConfigVersionFile.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3Config.cmake.in;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw_config.h.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3.pc.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\cmake_uninstall.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+     <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\generate.stamp</Outputs>
+     <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+     <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt</Message>
+     <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1 -BD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build --check-stamp-file D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+     <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindDoxygen.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakePackageConfigHelpers.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\WriteBasicConfigVersionFile.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3Config.cmake.in;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw_config.h.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3.pc.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\cmake_uninstall.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+     <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\generate.stamp</Outputs>
+     <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+     <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt</Message>
+     <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\bin\cmake.exe -HD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1 -BD:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build --check-stamp-file D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+     <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/PersonSpace/SoftRendering/glfw-3.2.1/glfw-3.2.1/CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC-C.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\3.8.0-rc1\CMakeRCCompiler.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeRCInformation.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindThreads.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckLibraryExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckSymbolExists.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CheckIncludeFile.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMake\modules\FindVulkan.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindDoxygen.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\FindPackageMessage.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\CMakePackageConfigHelpers.cmake;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\WriteBasicConfigVersionFile.cmake;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3Config.cmake.in;D:\PersonTool\cmake-3.8.0-rc1-win64-x64\cmake-3.8.0-rc1-win64-x64\share\cmake-3.8\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw_config.h.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\src\glfw3.pc.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\cmake_uninstall.cmake.in;D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+     <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\CMakeFiles\generate.stamp</Outputs>
+     <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\ZERO_CHECK.vcxproj">
+      <Project>E7B8DB20-4D24-3700-8459-B8BAE4F0ECE8</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\examples\boing.vcxproj">
+      <Project>74C8749B-DC74-35AC-B8A0-A105288D254A</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\clipboard.vcxproj">
+      <Project>633D4B24-B302-360A-8DD4-892F06C54E7A</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\cursor.vcxproj">
+      <Project>7B147B8E-0CFC-3E2F-B8CB-739F595749F6</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\empty.vcxproj">
+      <Project>0CAFED6F-FED1-3E0F-A556-DAA4467986FB</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\events.vcxproj">
+      <Project>F0E524AC-55DD-3D01-9323-C546494ADB7C</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\gamma.vcxproj">
+      <Project>C0137C39-F7B0-3DD6-9D46-94BBE101FF22</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\examples\gears.vcxproj">
+      <Project>517BC65F-E314-346F-85E8-6FE1BAA1043C</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\src\glfw.vcxproj">
+      <Project>B853FDAB-CB1A-3033-A92F-0A52A5FD54DF</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\glfwinfo.vcxproj">
+      <Project>AE73D21F-247A-3EBD-A029-01EC7F88515C</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\examples\heightmap.vcxproj">
+      <Project>715A155E-F1C2-3B25-8CC1-06C4D9F2CFFE</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\icon.vcxproj">
+      <Project>59E1E973-E32E-3AD2-8315-2262940D6235</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\iconify.vcxproj">
+      <Project>2A057333-32D3-3D10-BB92-4EB11C5DB40E</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\joysticks.vcxproj">
+      <Project>AC021D2D-32A8-3838-A83F-15F6E8586F2A</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\monitors.vcxproj">
+      <Project>F905F7B8-4801-3E52-B600-DA7FACD31425</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\msaa.vcxproj">
+      <Project>B2DDE467-9985-31F6-8C15-F079AFA10720</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\examples\particles.vcxproj">
+      <Project>1800C901-4EF9-3272-A3D6-F7006775C13D</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\reopen.vcxproj">
+      <Project>CF8479EE-8B73-319E-A918-0A14F7264342</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\sharing.vcxproj">
+      <Project>083CC25A-93F0-3BEF-840D-DAE9FCEE8CF5</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\examples\simple.vcxproj">
+      <Project>2757226C-CEEE-3E30-A125-B2F404F7DA7A</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\examples\splitview.vcxproj">
+      <Project>6CB7F1C1-7360-3E9F-A31F-F5F356772FDC</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\tearing.vcxproj">
+      <Project>5450F7FD-4118-31E8-831A-84D46264C2E5</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\threads.vcxproj">
+      <Project>372380B4-A711-3729-BCE1-ED25C1B28D6E</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\timeout.vcxproj">
+      <Project>A423A45D-2E5E-3E2E-BC51-6A94777D98E6</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\title.vcxproj">
+      <Project>CDF02F17-57B3-375C-83F6-79D78B417320</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\examples\wave.vcxproj">
+      <Project>ED1B2CAD-5D36-3783-BC11-A69F35297FF7</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\PersonSpace\SoftRendering\glfw-3.2.1\glfw-3.2.1\build\tests\windows.vcxproj">
+      <Project>F298122C-F480-34A5-A75D-42C89BAAE521</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
